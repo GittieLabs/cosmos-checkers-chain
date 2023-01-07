@@ -25,7 +25,9 @@ ports:
   - port: 3000
     onOpen: open-preview
   - port: 1317
+    onOpen: open-preview
   - port: 4500
+    onOpen: open-preview
   - port: 6060
   - port: 9090
   - port: 9091
