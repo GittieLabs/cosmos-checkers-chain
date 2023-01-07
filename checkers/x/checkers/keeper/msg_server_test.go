@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/gittielabs/checkers/testutil/keeper"
-	"github.com/gittielabs/checkers/x/checkers/keeper"
-	"github.com/gittielabs/checkers/x/checkers/types"
+    "github.com/gittielabs/checkers/x/checkers/types"
+    "github.com/gittielabs/checkers/x/checkers/keeper"
+    keepertest "github.com/gittielabs/checkers/testutil/keeper"
 )
 
 func setupMsgServer(t testing.TB) (types.MsgServer, context.Context) {

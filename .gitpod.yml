@@ -6,7 +6,7 @@ tasks:
     init: | # runs during prebuild
       sudo curl -L https://get.ignite.com/cli@v0.25.2 | bash -
       sudo mv ignite /usr/local/bin
-      ignite scaffold chain github.com/gittielabs/checkers
+      # ignite scaffold chain github.com/gittielabs/checkers
     command: cd checkers && ignite chain serve
   - name: CLI 
     command: |
