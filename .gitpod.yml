@@ -3,8 +3,8 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: | # runs during prebuild
-    sudo curl -L https://get.ignite.com/cli@v${IGNITE_VERSION} | bash -
-    sudo mv ignite /usr/local/bin
+      sudo curl -L https://get.ignite.com/cli@v${IGNITE_VERSION} | bash -
+      sudo mv ignite /usr/local/bin
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
