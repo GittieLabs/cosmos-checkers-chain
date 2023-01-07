@@ -2,11 +2,23 @@
 #   file: .gitpod.Dockerfile
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: | # runs during prebuild
+  - name: Ignite terminal
+    init: | # runs during prebuild
       sudo curl -L https://get.ignite.com/cli@v0.25.2 | bash -
       sudo mv ignite /usr/local/bin
+    command: |
+      cd checkers
+      ignite chain serve 
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
     onOpen: open-preview
+  - port: 1317
+  - port: 4500
+  - port: 6060
+  - port: 9090
+  - port: 9091
+  - port: 26656
+  - port: 26657
+  - port: 38763
